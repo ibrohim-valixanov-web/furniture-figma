@@ -1,0 +1,137 @@
+header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.furnit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  z-index: 1001; /* Menu ochilganda logo ko'rinib turishi uchun */
+}
+
+.furnit img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.furnit h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #3a3a3a;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Desktop Navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3a3a3a;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #b88e2f;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.icons svg {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hamburger Menu Icon - Desktopda yashirin */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ====================== RESPONSIVE ====================== */
+
+@media (max-width: 850px) {
+  .menu-toggle {
+    display: block; /* Planshet va telda ko'rinadi */
+    order: 3;
+  }
+
+  .icons {
+    gap: 15px;
+    margin-right: 10px;
+  }
+
+  /* Mobil menyu dizayni */
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Dastlab yashirin */
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  /* Menyu ochilganda */
+  nav ul.active {
+    right: 0;
+  }
+
+  nav ul li {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0 15px;
+  }
+  .furnit h1 {
+    font-size: 20px;
+  }
+  .furnit img {
+    width: 35px;
+  }
+  .icons {
+    gap: 12px;
+  }
+  .icons svg {
+    font-size: 20px;
+  }
+}

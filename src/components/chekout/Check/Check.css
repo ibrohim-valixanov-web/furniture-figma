@@ -1,0 +1,117 @@
+.checkout-container {
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Chap tomon: Billing Details Form */
+.billing-details {
+    flex: 1;
+}
+
+.billing-details h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #9F9F9F;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* O'ng tomon: Order Summary */
+.order-summary {
+    flex: 1;
+    padding: 20px 40px;
+}
+
+.summary-header, .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.summary-header h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.total-price {
+    color: #B88E2F;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.payment-methods {
+    margin-top: 40px;
+    border-top: 1px solid #D9D9D9;
+    padding-top: 20px;
+}
+
+.method-item {
+    margin-bottom: 15px;
+}
+
+.method-item label {
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.payment-desc {
+    font-weight: 300;
+    color: #9F9F9F;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.privacy-notice {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.place-order-btn {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #000;
+    background: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Pastki qism (Features) bir xil qoladi */
+.features-footer {
+    background-color: #FAF3EA;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 5%;
+}
+
+.feature-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

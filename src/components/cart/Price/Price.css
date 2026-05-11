@@ -1,0 +1,136 @@
+.cart-container {
+    padding: 50px 10%;
+    display: flex;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+/* Chap tomon: Mahsulotlar jadvali */
+.cart-main {
+    flex: 2;
+}
+
+.cart-table-header {
+    background-color: #F9F1E7;
+    display: flex;
+    padding: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.cart-table-header span {
+    flex: 1;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    color: #9F9F9F;
+}
+
+.product-img {
+    width: 100px;
+    height: 100px;
+    background-color: #F9F1E7;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cart-item span {
+    flex: 1;
+    text-align: center;
+    color: #000;
+}
+
+.cart-item .price, .cart-item .subtotal {
+    color: #9F9F9F;
+}
+
+.qty-input {
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #9F9F9F;
+    border-radius: 5px;
+}
+
+/* O'ng tomon: Cart Totals */
+.cart-totals {
+    flex: 1;
+    background-color: #F9F1E7;
+    padding: 30px;
+    text-align: center;
+    border-radius: 4px;
+    height: fit-content;
+}
+
+.cart-totals h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 40px;
+}
+
+.total-row .amount {
+    color: #B88E2F;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.checkout-btn {
+    margin-top: 30px;
+    padding: 15px 50px;
+    border: 1px solid #000;
+    background: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Pastki xizmatlar bo'limi */
+.features-bar {
+    background-color: #FAF3EA;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 5%;
+    margin-top: 50px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.feature-text h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #242424;
+}
+
+.feature-text p {
+    margin: 0;
+    color: #898989;
+    font-size: 20px;
+}

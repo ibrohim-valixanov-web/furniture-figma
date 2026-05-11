@@ -1,0 +1,136 @@
+.setup-section {
+  padding: 60px 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+.setup-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.setup-header span {
+  font-size: 18px;
+  color: #616161;
+  font-weight: 600;
+}
+
+.setup-header h2 {
+  font-size: 40px;
+  color: #3a3a3a;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* ====================== GALLERY GRID ====================== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 350px 350px;
+  gap: 16px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.img-box {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.08);
+}
+
+/* Desktop joylashuvi */
+.item-1 { grid-column: 1 / 2;  grid-row: 1; }
+.item-2 { grid-column: 2 / 5;  grid-row: 1; }
+.item-3 { grid-column: 5 / 6;  grid-row: 1; }
+.item-4 { grid-column: 8 / 10; grid-row: 1; }
+.item-5 { grid-column: 6 / 8;  grid-row: 1 / 3; }   /* Markaziy katta rasm */
+.item-6 { grid-column: 10 / 13; grid-row: 1; }
+
+.item-7 { grid-column: 1 / 3;  grid-row: 2; }
+.item-8 { grid-column: 3 / 6;  grid-row: 2; }
+.item-9 { grid-column: 8 / 13; grid-row: 2; }
+
+/* ====================== RESPONSIVE ====================== */
+
+/* Planshet (1024px gacha) */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  
+  .img-box {
+    height: 280px !important;
+  }
+  
+  .item-5 {
+    grid-column: 1 / 3;
+    grid-row: auto;
+    height: 320px !important;
+  }
+}
+
+/* Kichik planshet / Katta telefon (768px gacha) */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .img-box {
+    height: 240px !important;
+  }
+  
+  .item-5 {
+    height: 280px !important;
+  }
+}
+
+/* Telefon (Mobile) */
+@media (max-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .img-box {
+    height: 220px !important;
+  }
+  
+  .item-5 {
+    height: 260px !important;
+  }
+
+  .setup-header h2 {
+    font-size: 32px;
+  }
+  
+  .setup-header span {
+    font-size: 16px;
+  }
+}
+
+/* Juda kichik telefonlar */
+@media (max-width: 480px) {
+  .img-box {
+    height: 200px !important;
+  }
+  
+  .item-5 {
+    height: 240px !important;
+  }
+}

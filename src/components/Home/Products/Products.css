@@ -1,0 +1,176 @@
+/* OurProducts.css */
+
+.our-products {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.our-products h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #3a3a3a;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+}
+
+.product-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.08);
+}
+
+/* Badges */
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 6px 12px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.discount.red { background-color: #e97171; }
+.new.green { background-color: #2ec1ac; }
+
+/* Overlay (Leviosa kabi) */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: white;
+  gap: 15px;
+}
+
+.product-card:hover .overlay {
+  opacity: 1;
+}
+
+.add-to-cart {
+  background-color: #fff;
+  color: #b88e2f;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+/* Product Info */
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  font-size: 18px;
+  margin: 0 0 6px 0;
+  color: #3a3a3a;
+}
+
+.product-info p {
+  color: #898989;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.current {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+.old {
+  text-decoration: line-through;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+/* Show More Button */
+.show-more {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.show-more button {
+  padding: 14px 40px;
+  background: transparent;
+  border: 2px solid #b88e2f;
+  color: #b88e2f;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.show-more button:hover {
+  background: #b88e2f;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
