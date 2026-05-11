@@ -1,40 +1,42 @@
-import React from 'react'
-import Header from './components/Header/Header'
-import Main from './components/Main/Main'
-import Footer from './components/Footer/Footer'
-import Discover from './components/Home/Discover/discover'
-import Browse from './components/Home/Browse/Browse'
-import Products from './components/Home/Products/Products'
-import Rooms from './components/Home/Rooms/Rooms'
-import Gallery from './components/Home/Gallery/Gallery'
-import Sofa from './components/SingleProduct/Sofa/Sofa'
-import Description from './components/SingleProduct/Description/Description'
-import Product from './components/SingleProduct/Product/Product'
-import Totals from './components/cart/Totals/Totals'
-import Price from './components/cart/Price/Price'
-import Detallas from './components/chekout/Detalls/Detallas'
-import Check from './components/chekout/Check/Check'
+import React from "react";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Shop from "./components/Shop/Main/Shop";
+import Card from "./components/Shop/Card2/Card";
+import High from "./components/Shop/High3/High";
+import General from "./components/Comparison/General/General";
+import Comparison from "./components/Comparison/Comparison/Comparison";
+import Warranty from "./components/Comparison/Warranty/Warranty";
+import HomeContact from "./components/Contact/HomeConatct/HomeContact";
+import Yourname from "./components/Contact/Yourname/Yourname";
+import Crafted from "./components/Contact/Crafted/Crafted";
+import Homeblog from "./components/Blog/Homeblog/Homeblog";
+import Categories from "./components/Blog/Categories/Categories";
+import Support from "./components/Blog/Support/Support";
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Main />
-      <Footer />
-      <Discover/>
-      <Browse/>
-      <Products/>
-      <Rooms/>
-      <Gallery/>
-      <Sofa/>
-      <Description/>
-      <Product/>
-      <Totals/>
-      <Price/>
-      <Detallas/>
-      <Check/>
-    </div>
-  )
-}
 
-export default App
+      <Shop />
+      <Card />
+      <High />
+      <Footer />
+
+      <Comparison />
+      <General />
+      <Warranty />
+
+      <HomeContact/>   
+      <Yourname/>
+      <Crafted/>
+
+      <Homeblog/>
+      <Categories/>
+      <Support/>
+    </div>
+  );
+};
+
+export default App;

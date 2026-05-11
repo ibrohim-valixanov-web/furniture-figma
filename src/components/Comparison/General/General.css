@@ -1,0 +1,460 @@
+.general {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 60px;
+  background: #f9f9f9;
+}
+
+/* LEFT */
+.general-left {
+  width: 25%;
+}
+
+.general-left h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.view-more {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 2px solid #ccc;
+  transition: 0.3s;
+}
+
+.view-more:hover {
+  color: #000;
+  border-color: #000;
+}
+
+/* CENTER */
+.general-center {
+  display: flex;
+  gap: 30px;
+  width: 50%;
+}
+
+/* CARD */
+.card {
+  width: 330px; /* 🔥 WIDTH FIX */
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGE BOX */
+.card-img {
+  width: 100%;
+  height: 220px; /* 🔥 HAMMA RASM BIR XIL */
+  background: #f3ede7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* IMAGE */
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 🔥 CHO‘ZILMAYDI */
+  transition: 0.3s;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.05);
+}
+
+/* TEXT */
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.price {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.stars {
+  color: #fbbf24;
+}
+
+.reviews {
+  color: #aaa;
+}
+
+/* RIGHT */
+.general-right {
+  width: 25%;
+  text-align: right;
+}
+
+.general-right h3 {
+  margin-bottom: 15px;
+  margin-right: 50px;
+}
+
+.btn {
+  background: #b88e2f;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: #a17a27;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .general {
+    gap: 30px;
+    padding: 40px 40px;
+  }
+
+  .general-left {
+    width: 30%;
+  }
+
+  .general-center {
+    width: 40%;
+    gap: 20px;
+  }
+
+  .general-right {
+    width: 30%;
+  }
+
+  .card {
+    width: 280px;
+  }
+  .table-row-actions button {
+    right: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .general {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 30px 30px;
+  }
+  .table-row-actions  {
+    margin-right: 200px;
+  }
+
+  .general-left,
+  .general-center,
+  .general-right {
+    width: 100%;
+  }
+
+  .general-center {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .general-right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .general-right .btn {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px 25px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .general-right h3 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .general {
+    padding: 20px 20px;
+    gap: 20px;
+  }
+
+  .general-left h2 {
+    font-size: 18px;
+  }
+
+  .general-center {
+    gap: 20px;
+  }
+
+  .general-right .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .card {
+    max-width: 280px;
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card-img {
+    height: 180px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .rating {
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .general {
+    padding: 15px 15px;
+    gap: 15px;
+  }
+
+  .general-left h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .general-center {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card {
+    max-width: 100%;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+    margin: 8px 0 3px;
+  }
+
+  .card-img {
+    height: 150px;
+  }
+
+  .price {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .rating {
+    font-size: 11px;
+  }
+
+  .stars {
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+
+  .view-more {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .general {
+    padding: 10px 10px;
+  }
+
+  .general-left h2 {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 13px;
+  }
+
+  .card-img {
+    height: 120px;
+  }
+
+  .btn {
+    padding: 6px 15px;
+    font-size: 11px;
+  }
+}
+:root {
+  --primary-color: #b58d3d;
+  --text-color: #333;
+  --border-color: #f1f1f1;
+  --label-color: #666;
+}
+
+.comparison-container {
+  width: 100%;
+  height: 100vh;
+  padding: 0px 70px;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+}
+
+.comparison-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  min-width: 0;
+  gap: 0;
+}
+
+.table-section-header {
+  grid-column: span 3;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 0;
+  color: #000;
+}
+
+.table-row {
+  display: contents;
+}
+
+.table-cell {
+  padding: 15px 2px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 14px;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.table-cell.label {
+  color: var(--label-color);
+  font-weight: 500;
+  border-right: 1px solid var(--border-color);
+}
+
+.table-cell.value {
+  color: var(--text-color);
+  padding-left: 40px;
+}
+
+.table-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: static;
+  left: 0;
+  margin: 0;
+  position: relative;
+  left: 500px;
+}
+
+.btns {
+  position: static;
+  right: 110px;
+}
+
+.table-row-actions button {
+  padding: 10px 45px;
+  transition: 0.4s;
+  min-width: 180px;
+}
+
+.table-row-actions button:hover {
+  transform: scale(1.05);
+  background-color: #a17a27;
+}
+
+/* Responsive: Mobile variant */
+@media (max-width: 768px) {
+  .table-section-header {
+    font-size: 20px;
+    padding: 25px 0 15px 0;
+  }
+
+  .table-cell {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .table-cell.value {
+    padding-left: 15px;
+  }
+
+  .comparison-table {
+    grid-template-columns: 1fr;
+  }
+
+  .table-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .table-cell {
+    display: block;
+    width: 100%;
+    border-right: none;
+  }
+
+  .table-cell.label {
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+  }
+
+  .table-row-actions {
+    justify-content: center;
+  }
+
+  .table-row-actions button {
+    width: 100%;
+    max-width: 320px;
+  }
+}

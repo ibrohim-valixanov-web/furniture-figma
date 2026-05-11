@@ -1,0 +1,94 @@
+.high {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #faf3ea;
+  padding: 0 50px;
+}
+
+.high2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.high3 h3 {
+  font-size: 30px;
+  margin-left: 10px;
+}
+.high3 p {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #898989;
+}
+
+/* Large screens (1050px and below) */
+@media (max-width: 1050px) {
+  .high {
+    padding: 0 30px;
+    height: 35vh;
+  }
+
+  .high3 h3 {
+    font-size: 28px;
+  }
+
+  .high3 p {
+    font-size: 18px;
+  }
+}
+
+/* Medium screens (900px and below) */
+@media (max-width: 900px) {
+  .high {
+    padding: 0 20px;
+    height: 30vh;
+  }
+
+  .high3 h3 {
+    font-size: 26px;
+  }
+
+  .high3 p {
+    font-size: 16px;
+  }
+}
+
+/* Small screens (768px and below) */
+@media (max-width: 768px) {
+  .high {
+    height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .high3 h3 {
+    font-size: 24px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .high3 p {
+    font-size: 16px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Mobile styles (480px and below) */
+@media (max-width: 480px) {
+  .high {
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .high3 h3 {
+    font-size: 20px;
+  }
+
+  .high3 p {
+    font-size: 14px;
+  }
+}
